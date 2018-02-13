@@ -1,0 +1,14 @@
+
+/* ==========================================================================
+   ShowAvatar component
+   ========================================================================== */
+
+   .currentAvatar {
+    border: 1px solid transparent;
+  }
+  
+  .currentAvatar:hover,
+  .currentAvatar:focus {
+    border: 1px rgb(155, 160, 163) solid;
+    outline: none;
+  }
