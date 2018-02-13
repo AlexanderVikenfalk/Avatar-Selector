@@ -31,14 +31,6 @@
   cursor: pointer;
 }
 
-.fontPreloader{
-  font-family:'Source Sans Pro';
-  opacity: 0;
-}
-
-
-
-
 /* Popover opens */
 @keyframes bounceIn {
   from,
