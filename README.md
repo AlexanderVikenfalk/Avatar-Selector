@@ -1,2 +1,23 @@
-# Avatar-Selector
-Avatar Selections app based on Join Colony's coding challenge (https://github.com/JoinColony/coding-challenge)
+
+#### Author: Alexander Vikenfalk
+
+#### About this project: 
+This project was made to brush up my react skills. I tried my hand at this challenge: https://github.com/JoinColony/coding-challenge and I has as far as I know completed all the tasks (even if maybe not always with the most optimal solution ^^).
+
+#### Technologies used: 
+* **React.js** for overall functionality. 
+* **CSS 3** for design.
+* **Jest** for testing.
+
+#### How to use this service ####
+1. Go to: https://alexandervikenfalk.github.io/Avatar-Selector/
+2. Click (or select with Tab and choose with Enter) the avatar
+3. In the Popup - select a new a avatar.
+
+[LinkedIn](https://de.linkedin.com/in/alexander-vikenfalk-6b993b42)
+
+#### Screenshots ####
+![Excuse the bad framerate](https://giphy.com/gifs/xUOwGje8olJD5qpjKo)
+
+#### Other remarks ####
+Please see the original challenge for all the required specifications
