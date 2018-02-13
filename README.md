@@ -17,7 +17,7 @@ This project was made to brush up my react skills. I tried my hand at this chall
 [LinkedIn](https://de.linkedin.com/in/alexander-vikenfalk-6b993b42)
 
 #### Screenshots ####
-![Excuse the bad framerate](https://giphy.com/gifs/xUOwGje8olJD5qpjKo)
+![Excuse the bad framerate](https://media.giphy.com/media/xUOwGje8olJD5qpjKo/giphy.gif)
 
 #### Other remarks ####
 Please see the original challenge for all the required specifications
