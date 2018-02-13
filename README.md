@@ -14,10 +14,12 @@ This project was made to brush up my react skills. I tried my hand at this chall
 2. Click (or select with Tab and choose with Enter) the avatar
 3. In the Popup - select a new a avatar.
 
-[LinkedIn](https://de.linkedin.com/in/alexander-vikenfalk-6b993b42)
-
 #### Screenshots ####
 ![Excuse the bad framerate](https://media.giphy.com/media/xUOwGje8olJD5qpjKo/giphy.gif)
 
 #### Other remarks ####
 Please see the original challenge for all the required specifications
+
+### Get in contact with me ###
+[LinkedIn](https://de.linkedin.com/in/alexander-vikenfalk-6b993b42)
+
