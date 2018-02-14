@@ -11,7 +11,7 @@ This project was made to brush up my react skills. I tried my hand at this chall
 
 #### How to use this service ####
 1. Go to: https://alexandervikenfalk.github.io/Avatar-Selector/
-2. Click (or select with Tab and choose with Enter) the avatar
+2. Click (or select with Tab/Shift+Tab and choose with Enter) the avatar
 3. In the Popup - select a new a avatar.
 
 #### Screenshots ####
