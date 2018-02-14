@@ -3,9 +3,9 @@ import React from "react";
 import "../styles/showAvatar.css";
 
 // export default class ShowAvatar extends Component {
-  const handleKeyPress = event => {
+  const handleKeyPress = (event,props) => {
     if (event.key === "Enter") {
-      this.props.showPopup();
+      props.showPopup();
     }
   };
 
@@ -19,7 +19,7 @@ const showAvatar = props => {
       alt={avatar.label}
       className="avatar currentAvatar"
       onClick={() => props.showPopup()}
-      onKeyPress={event => handleKeyPress(event)}
+      onKeyPress={event => handleKeyPress(event,props)}
       tabIndex="0"
     />
   );

@@ -3,33 +3,36 @@ import React, { Component } from "react";
 import "../styles/selectAvatar.css";
 
 export default class SelectAvatar extends Component {
-  state = { activeAvatarID: null };
+  state = {
+    activeAvatarID: null,
+    animateLeaving: false
+  };
 
   componentDidMount() {
-    // Looks for the "popover" element and removes the class for exit animation if present
-    const elementMounted = document.getElementById("popover");
-    if (elementMounted != null) {
-      document.getElementById("popover").classList.remove("scaleOut");
-    }
 
     // Register an eventlistener for closing the element when clicking outside of it
     document.addEventListener("click", this.handleClickOutside);
   }
 
   componentWillUnmount() {
-    // Unregister an eventlistener for closing the element when clicking outside of it    
+    // Unregister an eventlistener for closing the element when clicking outside of it
     document.removeEventListener("click", this.handleClickOutside);
   }
 
+  //Toggle for exit animation
+  animateUnmount = () => {
+    this.setState({ animateLeaving: !this.state.animateLeaving });
+  };
+
   // Saves the ID of clicked Avatar in state
-  makeActive = (avatarID) => {
+  makeActive = avatarID => {
     this.setState({
       activeAvatarID: avatarID
     });
   };
 
   // Checks if user clicked outside of element and ads the exit-animation if needed
-  handleClickOutside = (e) => {
+  handleClickOutside = e => {
     if (!this.node.contains(e.target)) {
       this.animateUnmount();
       setTimeout(() => {
@@ -38,12 +41,7 @@ export default class SelectAvatar extends Component {
     }
   };
 
-  // Class for exit-animation
-  animateUnmount = () => {
-    document.getElementById("popover").classList.add("scaleOut");
-  };
-
-  // Checks for keypress 
+  // Checks for keypress
   handleKeyPress = (event, avatar) => {
     if (event.key === "Enter") {
       this.makeActive(avatar.id);
@@ -56,6 +54,12 @@ export default class SelectAvatar extends Component {
 
   render() {
     const { avatars } = this.props;
+    // Array with classes applied to the Popover.
+    let popoverClasses = ["popover", "bounceIn"];
+    // Animation-class is pushed to array when element is leaving.
+    if (this.state.animateLeaving) {
+      popoverClasses.push("scaleOut");
+    }
     // Checks if there are avatars to render
     const avatarList = !avatars
       ? null
@@ -90,7 +94,8 @@ export default class SelectAvatar extends Component {
     return (
       <div
         id="popover"
-        className="popover bounceIn"
+        className={popoverClasses.join(" ")}
+        // className="popover bounceIn"
         ref={node => (this.node = node)}
       >
         <div className="triangle-top " />
